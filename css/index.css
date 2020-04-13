@@ -1,1 +1,234 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 4rem;
+}
+.mainMenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: 1% 1% 2% 70%;
+}
+.mainMenu a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #808080;
+}
+.mainSection {
+  width: 80%;
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E8ECEF;
+}
+.mainSection .feature {
+  width: 40%;
+  height: 570px;
+}
+.mainSection img {
+  width: 80%;
+}
+.mainSection h1 {
+  font-size: 5rem;
+}
+.mainSection h3 {
+  font-size: 2.3rem;
+  margin-bottom: 4%;
+}
+.mainSection p {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+.mainSection a {
+  padding: 2%;
+  border-radius: 8px;
+  background-color: #808080;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.introduction {
+  margin: 1% 10% 0% 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.introduction .listen {
+  font-size: 1.8rem;
+  width: 45%;
+}
+.introduction h2 {
+  font-size: 3rem;
+}
+.introduction .list {
+  font-size: 1.8rem;
+  width: 20%;
+}
+.introduction .border2 {
+  border: 1px solid #808080;
+}
+.workHistoryHeader {
+  margin: 1% 10% 1% 10%;
+  font-size: 3rem;
+}
+.workHistory {
+  margin: 0% 10% 0% 10%;
+}
+.workHistory p {
+  font-size: 1.8rem;
+}
+.workHistory .workHeader {
+  display: flex;
+  justify-content: space-around;
+}
+.workHistory .workHeader p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.workHistory .workContent {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.workHistory .workContentShade {
+  display: flex;
+  justify-content: space-around;
+  background-color: #808080;
+}
