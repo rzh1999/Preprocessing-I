@@ -278,21 +278,39 @@ h1 {
 }
 .workHistory .workHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .workHistory .workHeader p {
   font-size: 1.8rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .workHistory .workHeader p {
+    font-size: 1.2rem;
+  }
+}
 .workHistory .workContent {
-  display: flex;
   justify-content: space-around;
-  text-align: center;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .workHistory .workContent p {
+    font-size: 1.2rem;
+  }
 }
 .workHistory .workContentShade {
-  display: flex;
   justify-content: space-around;
   background-color: #808080;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid red;
+}
+@media (max-width: 500px) {
+  .workHistory .workContentShade p {
+    font-size: 1.2rem;
+  }
 }
 .copyFooter {
   background-color: #E8ECEF;
