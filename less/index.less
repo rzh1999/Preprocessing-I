@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,6 +53,7 @@ table {
 
 @dark-color:#808080;
 @light-color:#E8ECEF;
+@headerFont:'Pacifico', cursive;
 * {
     box-sizing: border-box;
 }
@@ -102,6 +104,7 @@ h1{
 		width:80%;
 	}
 	h1{
+		font-family: @headerFont;
 		font-size: 5rem;
 	}
 	h3{
@@ -125,11 +128,22 @@ h1{
 	
 }
 
+// Add to mixins to file
+.mixFlexCenter(){
+	display: flex;
+	justify-content: space-around;
+}
+
+.mixFlexFooter(){
+	display:flex;
+	justify-content: center;
+}
 .introduction{
 	
 	margin:1% 10% 0% 10%;
-	display: flex;
-	justify-content: space-around;
+	// display: flex;
+	// justify-content: space-around;
+	.mixFlexCenter();
 
 	.listen{
 		font-size: 1.8rem;
@@ -161,8 +175,9 @@ h1{
 		font-size: 1.8rem;
 	}
 	.workHeader{
-		display:flex;
-		justify-content:space-around;
+		// display:flex;
+		// justify-content:space-around;
+		.mixFlexCenter();
 		
 	p{
 		font-size: 1.8rem;
@@ -171,15 +186,17 @@ h1{
 	}
 	.workContent{
 	
-		display:flex;
-		justify-content: space-around;
+		// display:flex;
+		// justify-content: space-around;
+		.mixFlexCenter();
 		text-align: center;
 
 	}
 	.workContentShade{
 		
-		display:flex;
-		justify-content: space-around;
+		// display:flex;
+		// justify-content: space-around;
+		.mixFlexCenter();
 		background-color:@dark-color;
 
 	}
@@ -187,6 +204,15 @@ h1{
 }
 
 .copyFooter{
-	
+	background-color: @light-color;
+	padding:2.5%;
+	// display:flex;
+	// justify-content: center;
+	.mixFlexFooter();
+
+	.formattedFooter{
+			font-family: @headerFont;
+			font-size: 3.5rem;
+	}
 }
 
