@@ -173,9 +173,20 @@ h1 {
   justify-content: center;
   background-color: #E8ECEF;
 }
+@media (max-width: 500px) {
+  .mainSection {
+    align-items: center;
+    height: 410px;
+  }
+}
 .mainSection .feature {
   width: 40%;
   height: 570px;
+}
+@media (max-width: 500px) {
+  .mainSection .feature {
+    width: 80%;
+  }
 }
 .mainSection img {
   width: 80%;
@@ -183,6 +194,11 @@ h1 {
 .mainSection h1 {
   font-family: 'Pacifico', cursive;
   font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .mainSection h1 {
+    font-size: 2.5rem;
+  }
 }
 .mainSection h3 {
   font-size: 2.3rem;
