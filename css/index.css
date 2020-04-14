@@ -208,7 +208,6 @@ h1 {
   margin-bottom: 5%;
 }
 .mainSection a {
-  border: 2px solid red;
   padding: 2%;
   border-radius: 8px;
   background-color: #808080;
@@ -292,7 +291,6 @@ h1 {
 }
 .workHistory .workContent {
   justify-content: space-around;
-  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
 }
@@ -306,7 +304,6 @@ h1 {
   background-color: #808080;
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid red;
 }
 @media (max-width: 500px) {
   .workHistory .workContentShade p {
