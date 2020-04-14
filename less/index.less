@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,11 +50,233 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@dark-color:#808080;
+@light-color:#E8ECEF;
+@headerFont:'Pacifico', cursive;
 * {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html{
+	height: 100%;
+	font-size:62.5%;
+	
+}
+body{
+	font-size: 1.5rem;
+	
+}
+h1{
+	font-size:4rem;
+}
+
+.mainMenu{
+	display:flex;
+	justify-content:space-evenly ;
+	width:30%;
+	margin: 1% 1% 2% 70%;
+	
+	@media(max-width:500px){
+		margin:0% 30% 1% 0%;
+		width:100%;
+	}
+
+	a{
+		
+		font-size: 2.4rem;
+		text-decoration: none;
+		color:@dark-color;
+		
+	}
+	
+}
+
+.mainSection{
+	
+	width:80%;
+	margin:0% 10% 0% 10%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: @light-color;
+	
+	@media(max-width:500px){
+		align-items: center;
+		height:410px;
+
+	}
+	
+	.feature{
+		width:40%;
+		height:570px;
+		@media(max-width:500px){
+			width:80%;
+		}
+	}
+	img{
+		width:80%;
+	}
+
+	h1{
+		font-family: @headerFont;
+		font-size: 5rem;
+		@media(max-width:500px){
+			font-size: 2.5rem;
+		}
+	}
+
+	h3{
+		font-size:2.3rem;
+		margin-bottom: 4%;
+	}
+
+	p{
+		font-size: 1.8rem;
+		margin-bottom: 5%;
+	}
+
+	a{
+		
+		padding:2%;
+		border-radius: 8px;
+		background-color: @dark-color;
+		color:white;
+		text-decoration: none;
+		font-size: 1.8rem;
+		@media(max-width:500px){
+			
+			display:flex;
+			justify-content: center;
+		}
+	}
+	
+}
+
+// Add to mixins to file
+.mixFlexCenter(){
+	display: flex;
+	justify-content: space-around;
+}
+
+.mixFlexFooter(){
+	display:flex;
+	justify-content: center;
+}
+// End of mixins
+
+.introduction{
+	
+	margin:1% 10% 0% 10%;
+	// display: flex;
+	// justify-content: space-around;
+	.mixFlexCenter();
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.listen{
+		
+		font-size: 1.8rem;
+		width:45%;
+		@media(max-width:500px){
+			width:90%;
+		}
+	}
+		h2{
+		font-size: 3rem;
+		}
+
+	.list{
+		
+		font-size: 1.8rem;
+		width:20%;
+		@media(max-width:500px){
+			margin-top: 4%;
+			width:90%;
+		}
+	}
+	.border2{
+		border:1px solid @dark-color;
+		padding:4%;
+	}
+	
+}
+.workHistoryHeader{
+	
+	margin:1% 10% 1% 10%;
+	font-size: 3rem;
+	@media(max-width:500px){
+		text-align: center;
+		margin-top: 4%;
+		background-color: @light-color;
+	}
+}
+.workHistory{
+	
+	margin:0% 10% 0% 10%;
+	p{
+		font-size: 1.8rem;
+	}
+	.workHeader{
+		 display:flex;
+		 justify-content:space-evenly;
+	p{
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+	@media(max-width:500px){
+		p{
+			font-size:1.2rem;
+		}
+	}
+	}
+	.workContent{
+	
+		// display:flex;
+		// justify-content: space-around;
+		.mixFlexCenter();
+		
+		display:flex;
+		justify-content: space-evenly;
+		p{
+		@media(max-width:500px){
+			font-size: 1.2rem;
+			
+		}
+	}
+	
+	}
+	.workContentShade{
+		
+		// display:flex;
+		// justify-content: space-around;
+		.mixFlexCenter();
+		background-color:@dark-color;
+		display:flex;
+		justify-content: space-evenly;
+		
+		p{
+			@media(max-width:500px){
+				font-size: 1.2rem;
+				
+			}
+	}
+
+}
+}
+.copyFooter{
+	background-color: @light-color;
+	padding:2.5%;
+	// display:flex;
+	// justify-content: center;
+	.mixFlexFooter();
+
+	.formattedFooter{
+			font-family: @headerFont;
+			font-size: 3.5rem;
+	}
 }
 

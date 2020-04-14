@@ -1,1 +1,322 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ96A.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 4rem;
+}
+.mainMenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: 1% 1% 2% 70%;
+}
+@media (max-width: 500px) {
+  .mainMenu {
+    margin: 0% 30% 1% 0%;
+    width: 100%;
+  }
+}
+.mainMenu a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #808080;
+}
+.mainSection {
+  width: 80%;
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #E8ECEF;
+}
+@media (max-width: 500px) {
+  .mainSection {
+    align-items: center;
+    height: 410px;
+  }
+}
+.mainSection .feature {
+  width: 40%;
+  height: 570px;
+}
+@media (max-width: 500px) {
+  .mainSection .feature {
+    width: 80%;
+  }
+}
+.mainSection img {
+  width: 80%;
+}
+.mainSection h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .mainSection h1 {
+    font-size: 2.5rem;
+  }
+}
+.mainSection h3 {
+  font-size: 2.3rem;
+  margin-bottom: 4%;
+}
+.mainSection p {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+.mainSection a {
+  padding: 2%;
+  border-radius: 8px;
+  background-color: #808080;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .mainSection a {
+    display: flex;
+    justify-content: center;
+  }
+}
+.introduction {
+  margin: 1% 10% 0% 10%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.introduction .listen {
+  font-size: 1.8rem;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .introduction .listen {
+    width: 90%;
+  }
+}
+.introduction h2 {
+  font-size: 3rem;
+}
+.introduction .list {
+  font-size: 1.8rem;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .introduction .list {
+    margin-top: 4%;
+    width: 90%;
+  }
+}
+.introduction .border2 {
+  border: 1px solid #808080;
+  padding: 4%;
+}
+.workHistoryHeader {
+  margin: 1% 10% 1% 10%;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .workHistoryHeader {
+    text-align: center;
+    margin-top: 4%;
+    background-color: #E8ECEF;
+  }
+}
+.workHistory {
+  margin: 0% 10% 0% 10%;
+}
+.workHistory p {
+  font-size: 1.8rem;
+}
+.workHistory .workHeader {
+  display: flex;
+  justify-content: space-evenly;
+}
+.workHistory .workHeader p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .workHistory .workHeader p {
+    font-size: 1.2rem;
+  }
+}
+.workHistory .workContent {
+  justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .workHistory .workContent p {
+    font-size: 1.2rem;
+  }
+}
+.workHistory .workContentShade {
+  justify-content: space-around;
+  background-color: #808080;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .workHistory .workContentShade p {
+    font-size: 1.2rem;
+  }
+}
+.copyFooter {
+  background-color: #E8ECEF;
+  padding: 2.5%;
+  display: flex;
+  justify-content: center;
+}
+.copyFooter .formattedFooter {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+}
