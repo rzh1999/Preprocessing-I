@@ -152,7 +152,6 @@ h1 {
   justify-content: space-evenly;
   width: 30%;
   margin: 1% 1% 2% 70%;
-  border: 2px solid dodgerblue;
 }
 @media (max-width: 500px) {
   .mainMenu {
@@ -221,9 +220,21 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .introduction .listen {
   font-size: 1.8rem;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .introduction .listen {
+    width: 90%;
+  }
 }
 .introduction h2 {
   font-size: 3rem;
@@ -232,12 +243,25 @@ h1 {
   font-size: 1.8rem;
   width: 20%;
 }
+@media (max-width: 500px) {
+  .introduction .list {
+    margin-top: 4%;
+    width: 90%;
+  }
+}
 .introduction .border2 {
   border: 1px solid #808080;
 }
 .workHistoryHeader {
   margin: 1% 10% 1% 10%;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .workHistoryHeader {
+    text-align: center;
+    margin-top: 4%;
+    background-color: #E8ECEF;
+  }
 }
 .workHistory {
   margin: 0% 10% 0% 10%;
